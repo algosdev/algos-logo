@@ -1,8 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  position: relative;
+  overflow: hidden;
 }
 .preload-cont {
-position: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   height: 100vh;
@@ -22,7 +26,7 @@ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: filler 2s ease forwards 4.1s;
+  animation: filler 3s ease forwards 4.1s;
 }
 .s {
   position: absolute;
@@ -30,7 +34,7 @@ position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -68%);
-  animation: filler 2s ease forwards 4.1s;
+  animation: filler 3s ease forwards 4.1s;
 }
 .s path {
   stroke-dasharray: 1034;
@@ -64,15 +68,15 @@ position: absolute;
 }
 .icon:nth-of-type(1) svg {
   color: #222;
-  animation: 3s rotater linear infinite 6.5s;
+  animation: 3s rotater linear infinite 7s;
 }
 .icon:nth-of-type(2) svg {
   color: #222;
-  animation: 3s rotater-reverse linear infinite 6.5s;
+  animation: 3s rotater-reverse linear infinite 7s;
 }
 .icon:nth-of-type(3) svg {
   color: #222;
-  animation: 3s rotater-reverse linear infinite 6.5s;
+  animation: 3s rotater-reverse linear infinite 7s;
 }
 .icon:nth-of-type(1) {
   position: absolute;
@@ -80,7 +84,7 @@ position: absolute;
   left: 38px;
   opacity: 0;
   transform: translate(0) rotate(0);
-  animation: 2s icon-1 ease forwards 4.8s;
+  animation: 2s icon-1 ease forwards 6s;
 }
 .icon:nth-of-type(2) {
   position: absolute;
@@ -88,7 +92,7 @@ position: absolute;
   opacity: 0;
   left: 121px;
   transform: translate(0);
-  animation: 2s icon-2 ease forwards 4.8s;
+  animation: 2s icon-2 ease forwards 6s;
 }
 .icon:nth-of-type(3) {
   position: absolute;
@@ -96,7 +100,7 @@ position: absolute;
   opacity: 0;
   right: 37px;
   transform: translate(0);
-  animation: 2s icon-3 ease forwards 4.8s;
+  animation: 2s icon-3 ease forwards 6s;
 }
 @keyframes anime {
   to {
@@ -108,10 +112,10 @@ position: absolute;
     fill: transparent;
   }
   50% {
-    opacity: 1;
     fill: #222;
   }
   80% {
+    opacity: 1;
     fill: #222;
   }
   100% {
