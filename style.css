@@ -21,7 +21,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: filler 1s ease forwards 4.1s;
+  animation: filler 2s ease forwards 4.1s;
 }
 .s {
   position: absolute;
@@ -29,12 +29,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -68%);
-  animation: filler 1s ease forwards 4.1s;
+  animation: filler 2s ease forwards 4.1s;
 }
 .s path {
   stroke-dasharray: 1034;
   stroke-dashoffset: 1034;
-  animation: anime 1.5s ease forwards 2.3s;
+  animation: anime 1.8s ease forwards 2.3s;
   stroke: #222;
 }
 .algo path:nth-child(1) {
@@ -71,7 +71,7 @@ i {
   left: 38px;
   opacity: 0;
   transform: translate(0) rotate(0);
-  animation: 2s icon-1 ease forwards 3.8s;
+  animation: 2s icon-1 ease forwards 4.8s;
 }
 .icon:nth-of-type(2) {
   position: absolute;
@@ -79,7 +79,7 @@ i {
   opacity: 0;
   left: 121px;
   transform: translate(0);
-  animation: 2s icon-2 ease forwards 3.8s;
+  animation: 2s icon-2 ease forwards 4.8s;
 }
 .icon:nth-of-type(3) {
   position: absolute;
@@ -87,7 +87,7 @@ i {
   opacity: 0;
   right: 37px;
   transform: translate(0);
-  animation: 2s icon-3 ease forwards 3.8s;
+  animation: 2s icon-3 ease forwards 4.8s;
 }
 @keyframes anime {
   to {
@@ -98,11 +98,16 @@ i {
   0% {
     fill: transparent;
   }
-  90% {
+  50% {
+    opacity: 1;
+    fill: #222;
+  }
+  80% {
     fill: #222;
   }
   100% {
     opacity: 0;
+    fill: #222;
   }
 }
 
